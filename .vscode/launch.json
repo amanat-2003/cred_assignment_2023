@@ -1,0 +1,45 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "cred_amanat",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "cred_amanat (profile mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "cred_amanat (release mode)",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "sleek_circular_slider",
+            "cwd": "external_packages/sleek_circular_slider",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "sleek_circular_slider (profile mode)",
+            "cwd": "external_packages/sleek_circular_slider",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "sleek_circular_slider (release mode)",
+            "cwd": "external_packages/sleek_circular_slider",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}
