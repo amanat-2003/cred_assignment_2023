@@ -65,18 +65,6 @@ class IsBankAccountSelected extends _$IsBankAccountSelected {
   }
 }
 
-@Riverpod(keepAlive: true)
-class IsButtonVisible extends _$IsButtonVisible {
-  @override
-  bool build() {
-    return false;
-  }
-
-  void set(bool val) {
-    state = val;
-  }
-}
-
 enum ViewType {
   sliderView,
   emiPlansView,

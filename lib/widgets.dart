@@ -200,12 +200,11 @@ class BottomButton extends ConsumerWidget {
                   ),
                 ),
                 const Spacer(),
-                if (ref.watch(isButtonVisibleProvider))
-                  const BottomButton(
-                    text: 'Select your bank account',
-                    backColor: AppColors.base2Color,
-                    buttonNo: BottomButtonNo.second,
-                  ),
+                const BottomButton(
+                  text: 'Select your bank account',
+                  backColor: AppColors.base2Color,
+                  buttonNo: BottomButtonNo.second,
+                ),
               ];
 
               final nonEmiViewColumn = [
@@ -621,13 +620,8 @@ class BottomButton extends ConsumerWidget {
                 .read(currentViewTypeProvider.notifier)
                 .set(ViewType.emiPlansView);
             _showBottomSheet1(context);
-            await Future.delayed(
-              const Duration(milliseconds: 300),
-              () => ref.read(isButtonVisibleProvider.notifier).set(true),
-            );
             break;
           case BottomButtonNo.second:
-            print("Button 2");
             ref
                 .read(currentViewTypeProvider.notifier)
                 .set(ViewType.bankAccountView);

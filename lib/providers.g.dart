@@ -53,22 +53,6 @@ final isBankAccountSelectedProvider =
 );
 
 typedef _$IsBankAccountSelected = Notifier<bool>;
-String _$isButtonVisibleHash() => r'3268ab6b3bc08e916fa9aa2b336e95cb612acfb8';
-
-/// See also [IsButtonVisible].
-@ProviderFor(IsButtonVisible)
-final isButtonVisibleProvider =
-    NotifierProvider<IsButtonVisible, bool>.internal(
-  IsButtonVisible.new,
-  name: r'isButtonVisibleProvider',
-  debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
-      ? null
-      : _$isButtonVisibleHash,
-  dependencies: null,
-  allTransitiveDependencies: null,
-);
-
-typedef _$IsButtonVisible = Notifier<bool>;
 String _$currentViewTypeHash() => r'b81b41f94950608b9aebf1b41c265efa6ab5baec';
 
 /// See also [CurrentViewType].
